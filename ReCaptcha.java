@@ -49,7 +49,7 @@ public class ReCaptcha {
             input.close();
             jsonReader = Json.createReader(new StringReader(response.toString()));
             jsonObject = jsonReader.readObject();
-            jsonReader.close();;
+            jsonReader.close();
             if (jsonObject.getBoolean("success")) {
                 return true;
             } else {
