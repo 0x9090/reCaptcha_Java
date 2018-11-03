@@ -53,7 +53,7 @@ public class ReCaptcha {
             if (jsonObject.getBoolean("success")) {
                 return true;
             } else {
-                Log.write("reCaptcha failed", 3);
+                System.out.println("reCaptcha failed");
                 return false;
             }
         } catch(Exception e) {
