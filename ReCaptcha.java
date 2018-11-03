@@ -26,7 +26,7 @@ public class ReCaptcha {
         JsonObject jsonObject;
 
         try {
-            url = new URL(recaptchaEndpoint);
+            url = new URL(this.recaptchaEndpoint);
             conn = (HttpsURLConnection) url.openConnection();
             conn.setReadTimeout(10000);
             conn.setConnectTimeout(15000);
